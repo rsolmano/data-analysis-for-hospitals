@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "<pre><code class=\"python\">df.describe(include=['object']); df['Category'].describe()</code></pre>"
+  - text: "<pre><code class=\"python\">df.describe(include=['category']); df.loc[:,'Category'].describe()</code></pre>"
+  - text: "<pre><code class=\"python\">df.summary(include='all'); df.iloc[:,1].describe()</code></pre>"
+  - text: "<pre><code class=\"python\">df.describe(include='all'); df['Category'].summary()</code></pre>"
+files:
+  - name: main.py
+    visible: true
+    text: |+
+      #  You can experiment here, it won’t be checked
+    
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/42890#comment
+status: Solved
+record: -1
+local_check: false
